@@ -1,0 +1,12 @@
+name: Sample first action
+on: [workflow_dispatch]
+
+jobs:
+  run-shell-command:
+    runs-on: hemi-runners
+    steps:
+      - name: Echo command
+        run: |
+          echo "Hello, world!"
+          echo "Hemi"
+          echo "!"
