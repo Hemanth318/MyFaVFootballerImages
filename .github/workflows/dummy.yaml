@@ -10,3 +10,7 @@ jobs:
           echo "Hello, world!"
           echo "Hemi"
           echo "!"
+      - name: Install NPM
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
